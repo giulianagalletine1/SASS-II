@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Smooch Sans', sans-serif;
+	background-color: darkgray;
+}
+/* ABRE ENCABEZADO CON NAV */
+header{
+	background-image: url(../imagenes/image1.jpg);
+	background-position: 150%;
+	background-attachment: scroll;
+	background-size: cover;
+}
+header img{
+	height: 100px;
+	width: 100px;
+	}
+.prueba{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: left;
+}
+.prueba h2{
+	margin-top: 60px;
+	
+}
+h1{
+	color: aliceblue;
+	margin: 20px;
+	font-size: 300%;
+}
+h2{
+	color: white;
+	height: 10px;
+	margin: 0%;
+	padding-left: 0%;
+	text-align: left;
+	font-size: 250%;
+	opacity: .9;
+}
+ul {
+font-size: 150%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+text-align: center;
+justify-content: space-between;
+padding-left: 1rem;
+padding-right: 1rem;
+color: aliceblue;
+margin: 10px;
+border: solid white 2px;
+}
+li{
+	list-style: none;
+}
+a{
+	color: aliceblue;
+}
+/* CIERRA ENCABEZADO CON NAV */
+/* ABRE CONTENIDO PRINCIPAL */
+.textTittle{
+color: rgb(194, 36, 36);
+margin-bottom: 5%;
+text-decoration: dotted;
+}
+.textB{
+	border: 5px;
+	color: black;
+}
+section p{
+	font-size: 200%;
+}
+.tableMon{
+	margin-top: 5%;
+}
+.pie{
+	margin-top: 200px;
+}
+
+/* CIERRA CONTENIDO PRINCIPAL */
+/* ABRE FOOTER */
+footer{
+	width: 50%;
+	height: auto;
+	margin-top: 10px;
+}
+/* CIERRA FOOTER */
+
+
+.footergris{
+    width: 50px;
+    color: gray;
+}
+.footergrey{
+    @extend .footergris;
+}
+@mixin sizes ($widht, $height){
+    height: $height;
+    width: $widht;
+    }
+    .mixins{
+        @include sizes(100vh,50vh)
+    }
